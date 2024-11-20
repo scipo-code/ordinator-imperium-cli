@@ -19,7 +19,7 @@
 
           src = pkgs.fetchurl {
             url = "https://github.com/scipo-code/ordinator-imperium-cli/archive/refs/tags/v0.1.4.tar.gz";
-            sha256 = "0pks4f58chvjdchy6h3h41w8fnplg9mk19hwf4rbjfs64zvvd1qb";
+            sha256 = "lOdtCwRBKDuinpsp7Fd5KWYh/s1r6NPkq1bEnZcEpL0";
           };
 
           installPhase = ''
