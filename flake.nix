@@ -9,7 +9,8 @@
 
     packages = { system, ... }: 
     let
-      pkgs = import nixpkgs { inherit system; };
+      system = "x86_64-linux";
+      pkgs = nixpkgs.legacyPackages.${system};
     in {
       default = pkgs.stdenv.mkDerivation {
         pname = "imperium";
