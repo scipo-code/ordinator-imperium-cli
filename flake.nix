@@ -17,13 +17,13 @@
       
 
       src = pkgs.fetchurl {
-        url = "https://github.com/scipo-code/ordinator-imperium-cli.releases/download/v0.1.0/imperium-1.0.0.tar.gz";
+        url = "https://github.com/scipo-code/ordinator-imperium-cli/archive/refs/tags/v0.1.2.tar.gz";
         sha = "";
       };
 
       installPhase = ''
         mkdir -p $out/bin
-        cp $src $out/bin/imperium
+        tar -xzf $src -C $out/bin
         chmod +x $out/bin/imperium
       '';
       };
