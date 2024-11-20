@@ -17,7 +17,7 @@
       
 
       src = pkgs.fetchurl {
-        url = "https://github.com/scipo-code/ordinator-imperium-cli/archive/refs/tags/v0.1.2.tar.gz";
+        url = "https://github.com/scipo-code/ordinator-imperium-cli/archive/refs/tags/v0.1.3.tar.gz";
         sha = "";
       };
 
