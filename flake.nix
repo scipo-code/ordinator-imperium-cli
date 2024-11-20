@@ -7,13 +7,16 @@
 
   outputs = { self, nixpkgs }: {
 
-    packages.default = import nixpkgs {
-      inherit (nixpkgs) system;
-    }.stdenv.mkDerivation {
-      pname = "imperium";
-      version = "0.1.0";
+    packages = { system, ... }: 
+    let
+      pkgs = import nixpkgs { inherit system; };
+    in {
+      default = pkgs.stdenv.mkDerivation {
+        pname = "imperium";
+        version = "0.1.0";
+      
 
-      src = fetchurl {
+      src = pkgs.fetchurl {
         url = "https://github.com/scipo-code/ordinator-imperium-cli.releases/download/v0.1.0/imperium-1.0.0.tar.gz";
         sha = "";
       };
@@ -23,6 +26,7 @@
         cp $src $out/bin/imperium
         chmod +x $out/bin/imperium
       '';
+      };
       
     };
 
