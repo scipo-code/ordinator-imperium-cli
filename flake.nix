@@ -15,11 +15,11 @@
       in {
         packages.default = pkgs.stdenv.mkDerivation {
             pname = "imperium";
-            version = "0.1.4";
+            version = "0.1.5";
 
           src = pkgs.fetchurl {
-            url = "https://github.com/scipo-code/ordinator-imperium-cli/archive/refs/tags/v0.1.4.tar.gz";
-            sha256 = "lOdtCwRBKDuinpsp7Fd5KWYh/s1r6NPkq1bEnZcEpL0";
+            url = "https://github.com/scipo-code/ordinator-imperium-cli/archive/refs/tags/v0.1.5.tar.gz";
+            sha256 = "1gd40jbrvi2nmgjd7s3brpz22ri9g5byqacvksi3na210h5nvrwl";
           };
 
           installPhase = ''
