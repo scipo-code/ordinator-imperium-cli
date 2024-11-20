@@ -19,7 +19,7 @@
 
           src = pkgs.fetchurl {
             url = "https://github.com/scipo-code/ordinator-imperium-cli/archive/refs/tags/v0.1.5.tar.gz";
-            sha256 = "1gd40jbrvi2nmgjd7s3brpz22ri9g5byqacvksi3na210h5nvrwl";
+            sha256 = "11d1b1ccgamzjybm1fcprk3qx04ij3smypfpsaf0wxb75c6chx4k";
           };
 
           installPhase = ''
@@ -28,8 +28,6 @@
             cp imperium $out/bin        
             chmod +x $out/bin/imperium
           '';
-
           };
-          
         });
 }
