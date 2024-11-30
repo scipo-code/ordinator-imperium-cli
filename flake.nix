@@ -15,10 +15,10 @@
       in {
         packages.default = pkgs.stdenv.mkDerivation {
             pname = "imperium";
-            version = "0.1.5";
+            version = "0.1.7";
 
           src = pkgs.fetchurl {
-            url = "https://github.com/scipo-code/ordinator-imperium-cli/archive/refs/tags/v0.1.5.tar.gz";
+            url = "https://github.com/scipo-code/ordinator-imperium-cli/archive/refs/tags/v0.1.7.tar.gz";
             sha256 = "11d1b1ccgamzjybm1fcprk3qx04ij3smypfpsaf0wxb75c6chx4k";
           };
 
