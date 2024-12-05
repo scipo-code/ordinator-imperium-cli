@@ -29,6 +29,7 @@
 
           unpackPhase = ":";
 
+          buildInputs = [ pkgs.openssl_3 pkgs.patchelf ];
           installPhase = ''
             mkdir -p $out/bin
             # cp imperium.exe $out/bin        
