@@ -32,7 +32,7 @@
           installPhase = ''
             mkdir -p $out/bin
             # cp imperium.exe $out/bin        
-            cp imperium $out/bin        
+            cp $src $out/bin        
             # chmod +x $out/bin/imperium.exe
             chmod +x $out/bin/imperium
           '';
