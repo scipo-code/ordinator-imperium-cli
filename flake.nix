@@ -35,7 +35,7 @@
             # cp imperium.exe $out/bin        
             cp $src $out/bin/imperium        
             # chmod +x $out/bin/imperium.exe
-            chmod +x $out/bin/imperium
+            chmod +xwr $out/bin/imperium
 
             patchelf --set-rpath ${pkgs.openssl_3.out}/lib $out/bin/imperium
           '';
