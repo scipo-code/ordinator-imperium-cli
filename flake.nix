@@ -17,21 +17,21 @@
             pname = "imperium";
             version = "0.1.10";
 
-          src1 = pkgs.fetchurl {
+          src = pkgs.fetchurl {
             url = "https://github.com/scipo-code/ordinator-imperium-cli/releases/download/v0.1.10/imperium.exe";
-            sha256 = "Uw7vp4zslCevGwi7Of2RheKMOT0JAS1dyQgKGPw0Cxg=";
+            sha256 = "164gasn0sg6z4wdnb1zw5hqd5zn49cp1hr1c4sir9ifyn9qv6wi5";
           };
 
           src2= pkgs.fetchurl {
             url = "https://github.com/scipo-code/ordinator-imperium-cli/releases/download/v0.1.10/imperium";
-            sha256 = "11d1b1ccgamzjybm1fcprk3qx04ij3smypfpsaf0wxb75c6chx4k";
+            sha256 = "060b6ky1h2h8r5fjs0897lwqrql5j7ykkfq83fpjg57cijkyy3jk";
           };
 
           installPhase = ''
             mkdir -p $out/bin
-            cp imperium.exe $out/bin        
+            # cp imperium.exe $out/bin        
             cp imperium $out/bin        
-            chmod +x $out/bin/imperium.exe
+            # chmod +x $out/bin/imperium.exe
             chmod +x $out/bin/imperium
           '';
           };
