@@ -27,6 +27,8 @@
             sha256 = "060b6ky1h2h8r5fjs0897lwqrql5j7ykkfq83fpjg57cijkyy3jk";
           };
 
+          unpackPhase = ":";
+
           installPhase = ''
             mkdir -p $out/bin
             # cp imperium.exe $out/bin        
